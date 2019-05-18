@@ -1,0 +1,24 @@
+/*魔改原菜单样式*/
+.ant-menu-dark .ant-menu-sub {
+    color: rgba(255, 255, 255, 0.65);
+    background: rgba(31, 58, 147, 1);
+}
+/*原Header组件去两边*/
+.ant-layout-header {
+    padding: 0;
+}
+
+.subMenuTitle {
+    font-family: "微软雅黑 Bold", "微软雅黑 Regular";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    /*display: inline-block;*/
+    /*width: 200px;*/
+    margin: 0 20px;
+    /*text-align: center;*/
+}
+
+.menuItem{
+    text-align: center;
+}
