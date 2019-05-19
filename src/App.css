@@ -1,3 +1,4 @@
+@import '../node_modules/antd/dist/antd.css';
 .App {
   text-align: center;
 }
@@ -30,4 +31,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.background{
+  background-image:url(imgs/background.png)
 }

@@ -1,0 +1,22 @@
+.model{
+    width: 100%;
+    height: 170px;
+    background: rgba(255, 255, 255, 0.1);
+}
+#model1{
+    background-image:url(../../../imgs/model1.png);
+}
+#model2{
+    background-image:url(../../../imgs/model2.png);
+}
+#model3{
+    background-image:url(../../../imgs/model3.png);
+}
+.modelText{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 170px;
+}

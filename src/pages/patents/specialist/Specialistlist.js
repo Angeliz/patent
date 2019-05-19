@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { Breadcrumb, Row, Col, Checkbox, Input, List, Button } from 'antd';
-import './Specialist.css'
+import { Breadcrumb, Row, Col, Checkbox, Input, List, Button, Progress } from 'antd';
+import './Specialistlist.css'
 
 const CheckboxGroup = Checkbox.Group;
 const plainOptions = ['新能源', '制造业', '化工'];
@@ -31,7 +31,7 @@ const data = [
     }
 ];
 
-class Specialist extends Component {
+class Specialistlist extends Component {
     state = {
         checkedList: [],
         indeterminate: true,
@@ -96,6 +96,7 @@ class Specialist extends Component {
                                             title={<a href="">{item.title}</a>}
                                             description="Ant Design, a design language for background applications, is refined by Ant UED Team"
                                         />
+                                        <Progress width={40} type="circle" percent={75} format={percent => `${percent} 分`} />
 
                                     </List.Item>
                                 )}
@@ -108,4 +109,4 @@ class Specialist extends Component {
     }
 }
 
-export default Specialist;
+export default Specialistlist;

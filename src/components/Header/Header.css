@@ -6,6 +6,7 @@
 /*原Header组件去两边*/
 .ant-layout-header {
     padding: 0;
+    height: 100%;
 }
 
 .subMenuTitle {
