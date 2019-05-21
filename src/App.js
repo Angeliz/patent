@@ -5,13 +5,16 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
-import Patentspecialist from './pages/patents/specialist/Specialistlist'
+import Patentspecialist from './pages/patents/specialist/Home'
 import Patentsystem from './pages/patents/system/Home'
 import Patentcustom from './pages/patents/custom/Home'
 
 import Institutionssystem from './pages/institutions/system/Home'
 
 import Rankfield from './pages/rank/field/Home'
+import Rankapplicant from './pages/rank/applicant/Home'
+
+import Dealpatent from './pages/deal/patentsearch/Home'
 
 function App() {
   return (
@@ -27,7 +30,11 @@ function App() {
                     <Route path="/patents/custom" component={Patentcustom} />
 
                     <Route path="/institutions/system" component={Institutionssystem} />
+
                     <Route path="/rank/field" component={Rankfield} />
+                    <Route path="/rank/applicant" component={Rankapplicant} />
+
+                    <Route path="/deal/patentsearch" component={Dealpatent} />
 
 
                 </Switch>

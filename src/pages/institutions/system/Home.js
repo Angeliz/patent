@@ -25,22 +25,22 @@ class Home extends Component {
                     <Divider>报告模版</Divider>
                     <Row gutter={48}>
                         <Col span={8}>
-                            <div className="model">
-                                <div id="model1">
+                            <div  id="model1">
+                                <div className="model">
                                     <p className="modelText">技术报告</p>
                                 </div>
                             </div>
                         </Col>
                         <Col span={8}>
-                            <div className="model">
-                                <div id="model2">
+                            <div  id="model2">
+                                <div className="model">
                                     <p className="modelText">竞争报告</p>
                                 </div>
                             </div>
                         </Col>
                         <Col span={8}>
-                            <div className="model">
-                                <div id="model3">
+                            <div  id="model3">
+                                <div className="model">
                                     <p className="modelText">我的报告</p>
                                 </div>
                             </div>

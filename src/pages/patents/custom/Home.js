@@ -1,19 +1,10 @@
 import React, {Component} from 'react';
-import { Row, Col, Input, Card, Table, Form,
-    Select,
-    InputNumber,
-    Switch,
-    Radio,
-    Slider,
-    Button,
-    Upload,
-    Icon,
-    Rate,
-    Checkbox} from 'antd';
+import { Row, Col, Divider, Form, Select, InputNumber, Button, Input } from 'antd';
 
 import '../../../public.css'
 
 const { Option } = Select;
+const Search = Input.Search;
 const data = [
     {
         name:'市场应用状况',
@@ -55,12 +46,17 @@ class Home extends Component {
         };
         return (
             <div style={{width: '80%', margin: '0 auto'}}>
-                <div className="card" style={{margin:'20px 0',padding:'40px 100px 20px 100px'}}>
+                <div className="card" style={{margin:'20px 0',padding:'40px 100px 20px 100px',textAlign:'center'}}>
+                    <div style={{textAlign:'center'}}>
+                        <p style={{fontWeight:'700',fontSize:'22px',color:'rgb(31, 58, 147)'}}>用户自定义评估</p>
+                        <Search style={{width:'60%',margin:'50px auto'}} size="large" placeholder="请输入专利号" onSearch={value => console.log(value)} enterButton />
+                    </div>
+
                     <Form {...formItemLayout}>
                         <Row>
                             <Col span={12}>
                                 <Form.Item label="指标选择" hasFeedback>
-                                    <Select placeholder="Please select a country">
+                                    <Select placeholder="请选择经济指标">
                                         {
                                             data.map((item)=><Option value={item.value}>{item.name}</Option>)
                                         }
@@ -77,7 +73,7 @@ class Home extends Component {
                         <Row>
                             <Col span={12}>
                                 <Form.Item label="指标选择" hasFeedback>
-                                    <Select placeholder="Please select a country">
+                                    <Select placeholder="请选择经济指标">
                                         {
                                             data.map((item)=><Option value={item.value}>{item.name}</Option>)
                                         }
@@ -94,7 +90,7 @@ class Home extends Component {
                         <Row>
                             <Col span={12}>
                                 <Form.Item label="指标选择" hasFeedback>
-                                    <Select placeholder="Please select a country">
+                                    <Select placeholder="请选择经济指标">
                                         {
                                             data.map((item)=><Option value={item.value}>{item.name}</Option>)
                                         }
@@ -111,7 +107,7 @@ class Home extends Component {
                         <Row>
                             <Col span={12}>
                                 <Form.Item label="指标选择" hasFeedback>
-                                    <Select placeholder="Please select a country">
+                                    <Select placeholder="请选择经济指标">
                                         {
                                             data.map((item)=><Option value={item.value}>{item.name}</Option>)
                                         }
@@ -128,7 +124,7 @@ class Home extends Component {
                         <Row>
                             <Col span={12}>
                                 <Form.Item label="指标选择" hasFeedback>
-                                    <Select placeholder="Please select a country">
+                                    <Select placeholder="请选择经济指标">
                                         {
                                             data.map((item)=><Option value={item.value}>{item.name}</Option>)
                                         }
@@ -143,7 +139,7 @@ class Home extends Component {
                             </Col>
                         </Row>
                         <Form.Item wrapperCol={{ span: 12, offset: 6 }}>
-                            <Button type="primary" htmlType="submit">
+                            <Button type="primary" htmlType="submit" >
                                 评估
                             </Button>
                         </Form.Item>

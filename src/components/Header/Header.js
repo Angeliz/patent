@@ -3,7 +3,7 @@ import { Layout, Menu, Row, Col } from 'antd';
 
 import './Header.css'
 import logow from '../../imgs/logow.png'
-import {Breadcrumb} from "antd/lib/breadcrumb";
+import { Breadcrumb } from "antd/lib/breadcrumb";
 
 const { Header } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -67,7 +67,7 @@ function Header0() {
                             }
                         >
                             <Menu.Item key="rankField" className="menuItem"><a href="/rank/field">领域</a></Menu.Item>
-                            <Menu.Item key="2" className="menuItem">申请人</Menu.Item>
+                            <Menu.Item key="rankApplicant" className="menuItem"><a href="/rank/applicant">申请人</a></Menu.Item>
                             <Menu.Item key="3" className="menuItem">发明人</Menu.Item>
                             <Menu.Item key="4" className="menuItem">地区</Menu.Item>
                         </SubMenu>
@@ -79,7 +79,7 @@ function Header0() {
                                 </span>
                             }
                         >
-                            <Menu.Item key="1" className="menuItem">专利检索平台</Menu.Item>
+                            <Menu.Item key="1" className="menuItem"><a href="/deal/patentsearch">专利检索平台</a></Menu.Item>
                             <Menu.Item key="2" className="menuItem">项目检索平台</Menu.Item>
                         </SubMenu>
                         <SubMenu

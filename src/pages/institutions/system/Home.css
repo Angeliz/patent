@@ -1,16 +1,26 @@
 .model{
-    width: 100%;
-    height: 170px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.4);
+    width:100%;
+    height:100%;
+    overflow: hidden;
 }
 #model1{
-    background-image:url(../../../imgs/model1.png);
+    width: 100%;
+    height: 170px;
+    background: url(../../../imgs/model1.png) no-repeat;
+    background-size: cover;
 }
 #model2{
-    background-image:url(../../../imgs/model2.png);
+    width: 100%;
+    height: 170px;
+    background: url(../../../imgs/model2.png) no-repeat;
+    background-size: cover;
 }
 #model3{
-    background-image:url(../../../imgs/model3.png);
+    width: 100%;
+    height: 170px;
+    background: url(../../../imgs/model3.png) no-repeat;
+    background-size: cover;
 }
 .modelText{
     font-weight: 700;

@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import { Row, Col, Input, Card, Table } from 'antd';
+import { Row, Col, Input, Card, Table, Select } from 'antd';
 
 const Search = Input.Search;
+const Option = Select.Option;
 const { Meta } = Card;
+const InputGroup = Input.Group;
 
 const columns = [
     {
@@ -25,6 +27,9 @@ const columns = [
         ),
     },
 ];
+function handleChange(value) {
+    console.log(`selected ${value}`);
+}
 
 const data = [
     {
@@ -48,7 +53,14 @@ class Home extends Component {
     render() {
         return (
             <div style={{width: '80%', margin: '0 auto',textAlign:'center'}}>
-                <Search style={{width:'60%',margin:'100px auto'}} size="large" placeholder="请输入专利号" onSearch={value => console.log(value)} enterButton />
+                <InputGroup compact style={{margin:'100px auto'}}>
+                    <Select style={{width:'120px'}} defaultValue="one"  onChange={handleChange} size={"large"}>
+                        <Option value="one">模型一</Option>
+                        <Option value="two">模型二</Option>
+                        <Option value="three">模型三</Option>
+                    </Select>
+                    <Search size={"large"} style={{width:'80%',margin:'0 0 0 20px'}} placeholder="请输入检索词" onSearch={value => console.log(value)} enterButton />
+                </InputGroup>
                 <Row gutter={48}>
                     <Col span={8}>
                         <Card

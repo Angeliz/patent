@@ -1,0 +1,35 @@
+.field{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.fieldOut{
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+}
+#field1{
+    background: url(../../../imgs/field1.png) no-repeat;
+    background-size: cover;
+}
+#field2{
+    background: url(../../../imgs/field2.png) no-repeat;
+    background-size: cover;
+}
+#field3{
+    background: url(../../../imgs/field3.png) no-repeat;
+    background-size: cover;
+}
+#field4{
+    background: url(../../../imgs/field4.png) no-repeat;
+    background-size: cover;
+}
+.fieldText{
+    color:white;
+    font-family: '微软雅黑';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 120px;
+}

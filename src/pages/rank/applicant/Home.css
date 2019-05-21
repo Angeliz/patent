@@ -1,0 +1,67 @@
+.type{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.typeOut{
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+}
+#type1{
+    background: url(../../../imgs/quanbu.jpg) no-repeat;
+    background-size: cover;
+}
+#type2{
+    background: url(../../../imgs/daxue.png) no-repeat;
+    background-size: cover;
+}
+#type3{
+    background: url(../../../imgs/qiye.png) no-repeat;
+    background-size: cover;
+}
+#type4{
+    background: url(../../../imgs/shiyedanwei.jpg) no-repeat;
+    background-size: cover;
+}
+#type5{
+    background: url(../../../imgs/huawei.png) no-repeat;
+    background-size: cover;
+}
+#type6{
+    background: url(../../../imgs/gaotong.png) no-repeat;
+    background-size: cover;
+}
+#type7{
+    background: url(../../../imgs/guojiadianwang.png) no-repeat;
+    background-size: cover;
+}
+#type8{
+    background: url(../../../imgs/sanxing.jpg) no-repeat;
+    background-size: cover;
+}
+#type9{
+    background: url(../../../imgs/pingguo.jpg) no-repeat;
+    background-size: cover;
+}
+#type10{
+    background: url(../../../imgs/wuda.jpg) no-repeat;
+    background-size: cover;
+}
+#type11{
+    background: url(../../../imgs/zhongkeyuan.jpg) no-repeat;
+    background-size: cover;
+}
+#type12{
+    background: url(../../../imgs/qinghua.jpg) no-repeat;
+    background-size: cover;
+}
+.typeText{
+    color:white;
+    font-family: '微软雅黑';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 200px;
+}
