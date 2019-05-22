@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Row, Col, Divider, Form, Select, InputNumber, Button, Input } from 'antd';
+import { Row, Col, Form, Select, InputNumber, Button, Input } from 'antd';
 
 import '../../../public.css'
 
